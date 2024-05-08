@@ -1,0 +1,7 @@
+{
+    "project_name": "demo",
+    "repo_name": "{{cookiecutter.project_name.lower().replace(' ', '_')}}",
+    "author_name": "YourName",
+    "desc": "A description to {{cookiecutter.project_name}}",
+    "use_git": "y"
+}
