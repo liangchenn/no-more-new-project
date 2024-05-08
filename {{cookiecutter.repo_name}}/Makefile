@@ -28,9 +28,9 @@ clean:
 
 
 .PHONY: dvc
-dvc: creat_venv install-dvc
+dvc: create_venv install-dvc
 
-.PHONY: creat_venv
+.PHONY: create_venv
 create_venv:
 	@echo "Creating virtual env at .venv/ ..."
 	python -m venv .venv
