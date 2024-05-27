@@ -2,19 +2,19 @@
 help:
 	@echo "This is a help panel for {{cookiecutter.project_name}}."
 	@echo "------------------------------"
-	@echo "help:         show this help"
-	@echo "setup:        setup the environment"
-	@echo "data:         download the necessary datasets"
-	@echo "clean:        clean the environment"
-	@echo "dvc:          install python virtual env with dvc"
-	@echo "create_venv:  create python virtual environment"
-	@echo "install-dvc:  install dvc"
-	@echo "[command]:    show help of [command]"
+	@echo "- help:         show this help"
+	@echo "- setup:        setup the environment"
+	@echo "- data:         download the necessary datasets"
+	@echo "- clean:        clean the environment"
+	@echo "- dvc:          install python virtual env with dvc"
+	@echo "- create_venv:  create python virtual environment"
+	@echo "- install-dvc:  install dvc"
+	@echo "- [command]:    show help of [command]"
 
 
 .PHONY: setup
-setup:
-	@echo "add command to setup the environment"
+setup: dvc
+	@echo "preparing the environment"
 
 
 .PHONY: data

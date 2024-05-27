@@ -4,12 +4,13 @@ PYTHON = ${VENV}/bin/python
 
 .PHONY: help
 help:
-	@echo "help: Shows this help."
-	@echo "project: Creates a new project from a cookiecutter template."
-	@echo "install: Install cookiecutter package and create virtual env."
-	@echo "create_venv: Create virtual env."
-	@echo "install-cookie: Install cookiecutter package."
-
+	@echo "Help Panel"
+	@echo "------------------------------"
+	@echo "- help:            shows this help."
+	@echo "- project:         creates a new project from a cookiecutter template."
+	@echo "- install:         install cookiecutter package and create virtual env."
+	@echo "- create_venv:     create virtual env."
+	@echo "- install-cookie:  install cookiecutter package."
 
 .PHONY: project
 project:
