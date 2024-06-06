@@ -1,3 +1,15 @@
+# variables
+VENV_DIR = .venv
+PYTHON = $(VENV_DIR)/bin/python
+
+# Load environment variables from .env file
+include .env
+
+# default target
+.PHONY: all
+all: dvc data
+
+
 .PHONY: help
 help:
 	@echo "This is a help panel for {{cookiecutter.project_name}}."
@@ -19,7 +31,7 @@ setup: dvc
 
 .PHONY: data
 data:
-	$(PYTHON) -m dvc pull
+	$(PYTHON) -m dvc pull --remote $(DVC_REMOTE_TARGET)
 
 
 .PHONY: clean
